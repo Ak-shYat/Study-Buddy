@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+AI Reading Assistant 📚🤖
+A sophisticated web application that transforms your reading experience with AI-powered jargon explanations, intelligent note-taking, and interactive word clouds. Built with Next.js, TypeScript, and Google Gemini AI.
 
-## Getting Started
+✨ Features
+🧠 AI-Powered Jargon Explanations
+Double-tap any word for instant contextual explanations
+Category-aware intelligence adapts to your selected field (Law, ML, Medicine, etc.)
+Comprehensive definitions with examples and related terms
+Difficulty indicators (Basic, Intermediate, Advanced)
+📝 Smart Note-Taking
+Save important text snippets with full context
+Create notes directly from selected text
+Organize and manage your research insights
+Real-time note editing and deletion
+☁️ Interactive Word Clouds
+Visualize related concepts around any term
+Beautiful radial layouts showing term relationships
+Enhances understanding of complex topics
+📄 Document Management
+Upload and manage multiple documents
+Sample documents for immediate testing
+Clean, Adobe Acrobat-like reading interface
+Zoom controls and document navigation
+🎯 Multi-Domain Support
+Machine Learning & AI - Neural networks, algorithms, deep learning
+Legal - Jurisprudence, torts, constitutional law
+Medicine & Epidemiology - Biostatistics, herd immunity, clinical trials
+And more - Expandable to any domain
+🚀 Quick Start
+Clone and Install
 
-First, run the development server:
+git clone <repository-url>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+cd ai-reading-assistant
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+bun install
+Set up Gemini API (Optional - works with mock data too)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+cp .env.example .env.local
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Add your Gemini API key to .env.local
+Run the Application
 
-## Learn More
+bun run dev
+Visit http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+🔑 Google Gemini API Setup
+For real AI explanations (optional - the app works great with mock data):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Get your free API key from Google AI Studio
+Add it to .env.local:
+GEMINI_API_KEY=your_api_key_here
+See SETUP.md for detailed instructions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎯 How to Use
+Start Reading: Click "Try Sample Document" or upload your own
+Get Explanations: Double-tap any technical term
+Explore Concepts: Use the tabbed explanations (Examples, Related, Cloud)
+Take Notes: Select important text and create contextual notes
+Switch Domains: Change the category in the header for specialized explanations
+🏗️ Tech Stack
+Frontend: Next.js 15, React, TypeScript
+Styling: Tailwind CSS, shadcn/ui components
+AI: Google Gemini 1.5 Flash
+Visualization: Custom SVG word clouds
+Development: Bun, ESLint, Biome
+📱 Features Demo
+The application includes comprehensive sample documents covering:
 
-## Deploy on Vercel
+AI/ML: Neural networks, gradient descent, overfitting
+Legal: Constitutional law, tort liability, due process
+Health: Epidemiological studies, statistical analysis
+🌟 Perfect For
+Students learning complex subjects
+Researchers reading technical papers
+Professionals working across domains
+Anyone who encounters unfamiliar jargon
+🛠️ Development
+Built with modern web technologies for optimal performance:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Server-side rendering with Next.js
+Type-safe development with TypeScript
+Responsive design with Tailwind CSS
+Component-based architecture
+Real-time AI integration
+📄 License
+MIT License - Feel free to use and modify for your projects!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
