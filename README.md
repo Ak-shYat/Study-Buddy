@@ -50,7 +50,7 @@ cp .env.example .env.local
 
 ### Run the Application
 ```bash
-bun run dev
+npm run dev
 ```
 Visit [http://localhost:3000](http://localhost:3000)
 
@@ -76,7 +76,7 @@ GEMINI_API_KEY=your_api_key_here
 - **Styling**: Tailwind CSS, shadcn/ui components
 - **AI**: Google Gemini 1.5 Flash
 - **Visualization**: Custom SVG word clouds
-- **Development**: Bun, ESLint, Biome
+- **Development**: npm, ESLint, Biome
 
 ## 📱 Features Demo
 The application includes comprehensive sample documents covering:
